@@ -1,5 +1,7 @@
 # Kamera Snapshot-Archiv
 
+![Kamera Snapshot-Archiv](https://raw.githubusercontent.com/DerGnom1977/ha-kamera-snapshots/main/images/preview.png)
+
 Speichert bei Bewegung ein Bild in einem Ringpuffer mit 20 Plätzen und zeigt sie nach Zeit sortiert an.
 
 Python-Integration für Home Assistant (HACS). Sie ersetzt das bisherige YAML-Paket
