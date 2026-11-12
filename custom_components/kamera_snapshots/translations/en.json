@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kamera Snapshot-Archiv",
+        "description": "Speichert bei Bewegung ein Bild in einem Ringpuffer mit 20 Plätzen und zeigt sie nach Zeit sortiert an.",
+        "data": {
+          "bewegung": "Bewegungsmelder",
+          "kamera": "Kamera"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Es ist nur eine Instanz erlaubt."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kamera Snapshot-Archiv",
+        "data": {
+          "bewegung": "Bewegungsmelder",
+          "kamera": "Kamera"
+        }
+      }
+    }
+  },
+  "services": {
+    "snapshot": {
+      "name": "Snapshot jetzt",
+      "description": "Speichert sofort ein Bild im Ringpuffer.",
+      "fields": {}
+    }
+  }
+}

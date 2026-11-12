@@ -1,0 +1,31 @@
+# Dashboard für Home Assistant: Einstellungen → Dashboards → Dashboard hinzufügen,
+# dann oben rechts ⋮ → Raw-Konfigurationseditor und diesen Inhalt einfügen.
+title: Kamera Snapshot-Archiv
+views:
+- title: Kamera Snapshot-Archiv
+  path: kamera_snapshots
+  icon: mdi:view-dashboard
+  cards:
+  - type: markdown
+    title: Aktuelles Bild
+    content: '{{ states(''sensor.kamera_snapshot_auswahl'') }}
+
+
+      {% set u = state_attr(''sensor.kamera_snapshot_auswahl'',''url'') %}{% if u
+      %}![Snapshot]({{ u }}){% endif %}'
+  - type: entities
+    title: Archiv
+    entities:
+    - sensor.kamera_snapshot_auswahl
+    - sensor.kamera_snapshot_anzahl
+    - number.kamera_bild
+    - button.kamera_bild_neuer
+    - button.kamera_bild_aelter
+    - button.kamera_snapshot_jetzt
+    - button.kamera_archiv_leeren
+  - type: entities
+    title: Einstellungen
+    entities:
+    - switch.kamera_aktiv
+    - number.kamera_entprellung
+    - button.kamera_standardwerte
