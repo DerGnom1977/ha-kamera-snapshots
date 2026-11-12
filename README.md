@@ -4,6 +4,8 @@
 
 Speichert bei Bewegung ein Bild in einem Ringpuffer mit 20 Plätzen und zeigt sie nach Zeit sortiert an.
 
+![Dashboard](https://raw.githubusercontent.com/DerGnom1977/ha-kamera-snapshots/main/images/dashboard.jpg)
+
 Python-Integration für Home Assistant (HACS). Sie ersetzt das bisherige YAML-Paket
 `sonoff_cam_s2/packages/kamera_snapshots.yaml`: Einstellungen sind jetzt eigene Entitäten (Schalter, Zahlen, Auswahlfelder,
 Uhrzeiten), die Logik läuft in Python statt in Automationen und Skripten.
